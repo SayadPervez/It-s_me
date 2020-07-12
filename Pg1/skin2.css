@@ -14,13 +14,17 @@
 #sub{
   margin:0 16px;
   position: relative;
-  top:60vh;
-  padding:4px 24px;
+  top:55vh;
+  padding:60px 24px;
   background-color: rgba(0,0,0,0.48);
   border:2px solid rgba(255,255,255,0.05);
   border-radius: 6px;
   min-width: 60%;
   max-width:max-content
+}
+
+#nav-g{
+  font-size: 30px;
 }
 
 h1{
@@ -36,18 +40,30 @@ h1{
 h2{
   padding:0;
   margin:0;
+  font-size: 60px;
   text-indent: -4px;
 }
 
+.mobh{
+  display: none;
+}
+
+a{
+  color: yellow;
+  font-weight: bolder;
+  font-size: 25px;
+  padding:2px 30px;
+}
+
 .p{
-  text-indent: 8px;
+  
   padding:8px 16px;
   /*background-color: rgba(255,255,255,0.1);*/
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.75);
 }
 
 #mt{
-  height: 85vh;
+  height: 90vh;
 }
 
 body{
@@ -62,4 +78,18 @@ body{
 .overlay{
   background-color: rgba(16,16,16,0);
 }
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
+      html {
+        background-image: url("./ponly2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0;
+        padding:0;
+      }
+      body{
+        display:none;
+      }
     }

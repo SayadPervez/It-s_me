@@ -6,6 +6,15 @@ html{
     letter-spacing: 1px;
     color: white;
     background-color: rgb(4,5,7);
+    background-image: url("./bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+a{
+    color:yellow;
 }
 
 .p{
@@ -19,11 +28,6 @@ html{
 body{
     margin:0;
     padding:0;
-    background-image: url("./IMG_20200709_142724_527.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
 }
 
 strong{
@@ -36,18 +40,24 @@ p{
     text-align: justify;
 }
 
+.pch{
+    display: none;
+}
+
 .container{
-    margin:1.5em;
+    position: relative;
+    top:8em;
+    margin:2.5em;
     /*background-color: #101010;*/
-    background-color: rgba(16,16,16,0.38);
+    background-color: rgba(16,16,16,0.68);
     padding:1em 1em;
-    width:78%;
+    width:40%;
     border:2px solid  rgba(16,16,16,0.98);
     border-radius: 1em;
 }
 
 h1{
-    color:red;
+    color:Yellow;
     letter-spacing: 1.8px;
 }
 

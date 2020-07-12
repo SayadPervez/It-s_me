@@ -8,9 +8,10 @@ if(isMobile==true)
     dev="mobile";
 else
     dev="pc";
-}
 
 if(isMobile==true)
     document.getElementById("nav-g").innerHTML="Swipe Up";
 else
     document.getElementById("nav-g").innerHTML="Scroll Down";
+}
+

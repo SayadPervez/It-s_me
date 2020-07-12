@@ -88,3 +88,17 @@ h1{
 ::-webkit-scrollbar-track {  background-color: rgba(0,0,0,0.34);}
 ::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,0.34);}
 ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 0px;}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    html {
+      background-image: url("./ponly2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin:0;
+      padding:0;
+    }
+    body{
+      display:none;
+    }
+  }

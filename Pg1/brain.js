@@ -6,15 +6,9 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 if(isMobile==true)
-    dev="mobile";
+    {dev="mobile";document.getElementById('nav-g').innerHTML="Swipe Up";}
 else
-    dev="pc";
+    {dev="pc";document.getElementById('nav-g').innerHTML="Scroll Down";}
 
 }
 
-window.addEventListener("load",function() {
-    setTimeout(function(){
-        // This hides the address bar:
-        window.scrollTo(0, 1);
-    }, 0);
-});
