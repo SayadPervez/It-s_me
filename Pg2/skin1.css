@@ -1,0 +1,90 @@
+html{
+    margin:0;
+    padding:0;
+    font-family: 'Lato',sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(16,16,16,1);
+    overflow-x:hidden;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.box{
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+}
+
+#b1{
+    background-image: url("./Lion.jpg");
+}
+#b2{
+    background-image: url("./Panther.jpg");
+}
+#b3{
+    background-image: url("./TIGER.jpg");
+}
+#b4{
+    background-image: url("./Eagle.jpg");
+}
+#b5{
+    background-image: url("./cheetah.jpg");
+}
+
+strong{
+    font-size: 22px;
+}
+
+p{
+    margin:6px 6px;
+    padding:4px 4px;
+    text-align: justify;
+}
+
+h1{
+    position: relative;
+    top:40%;
+    font-size:3em;
+    color:whitesmoke;
+    letter-spacing: 1.8px;
+    margin:0px auto;
+    padding:15px 1em;
+    border:2px solid rgba(255,255,255,0.18);
+    border-radius: 4px;
+    background-color: rgba(16,16,16,0.58);
+    min-width:70%;
+    max-width: 78%;
+    text-align: center;
+}
+
+#nav-g{
+    border:2px solid rgba(255,255,255,0.18);
+    border-radius: 4px;
+    color:whitesmoke;
+    font-size: 1.5em;
+    background-color: rgba(16,16,16,0.38);
+    position:fixed;
+    right:0.5em;
+    padding:0.5em 0.5em;
+    margin:0.5em 0.5em;
+}
+
+.overlay{
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px;}
+::-webkit-scrollbar-button {  background-color: red; }
+::-webkit-scrollbar-track {  background-color: rgba(0,0,0,0.34);}
+::-webkit-scrollbar-track-piece { background-color: rgba(0,0,0,0.34);}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 0px;}

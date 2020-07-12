@@ -1,0 +1,124 @@
+@media only screen and (min-width: 1025px) {
+html{
+    margin:0;
+    padding:0;
+    font-family: 'Lato',sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(4,5,7);
+}
+
+.p{
+    text-indent: 0.5em;
+}
+
+#mt{
+    display: none;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url("./IMG_20200709_142724_527.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+strong{
+    font-size: 22px;
+}
+
+p{
+    margin:6px 6px;
+    padding:4px 4px;
+    text-align: justify;
+}
+
+.container{
+    margin:1.5em;
+    /*background-color: #101010;*/
+    background-color: rgba(16,16,16,0.38);
+    padding:1em 1em;
+    width:78%;
+    border:2px solid  rgba(16,16,16,0.98);
+    border-radius: 1em;
+}
+
+h1{
+    color:red;
+    letter-spacing: 1.8px;
+}
+
+.button{
+    font-family: 'cabin',sans-serif;
+    width:60%;
+    height:9%;
+    border:2px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+    color:#000;
+    background: transparent;
+    /*background-color: #131313;*/
+    box-shadow: 5px 5px 1px 0.5px #222020;
+    margin:0px auto;
+}
+
+.button:hover{
+    box-shadow: 5px 5px 1px 0.5px #222020; 
+    transition: 0.2s all; 
+}
+
+.button:active { 
+    transform: scale(0.75);
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 5px 5px 1px 0.5px #222020; 
+    /* Lowering the shadow */ 
+} 
+
+/* Below lines keep yellow autocomplete yellow */
+/**/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+/**/
+
+/*placeholder mods down here...*/
+
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-weight: bolder;
+    opacity: 1; /* Firefox */
+  }
+
+  .input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #FFD700;
+    font-weight: bolder;
+    }
+    
+    .input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #FFD700;
+    font-weight: bolder;
+    }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFD700;
+    font-weight: bolder;
+    opacity: 1; /* Firefox */
+  }
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #FFD700;
+font-weight: bolder;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #FFD700;
+font-weight: bolder;
+}
+
+}
