@@ -14,4 +14,7 @@ else
     document.getElementById("nav-g").innerHTML="Scroll Down";
 }
 
+function sp()
+{window.location.replace("https://sayadpervez.github.io/It-s_me/softwareprojects/index.html");}
+
     
