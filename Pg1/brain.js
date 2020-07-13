@@ -10,7 +10,7 @@ if(isMobile==true)
 else
     {dev="pc";document.getElementById('nav-g').innerHTML="Scroll Down";}
 
-    images=['./bg3.jpg','./bg33.jpg'];
+    images=['./bg3.jpg','./bg31.jpg'];
     document.getElementById("parent").style.backgroundImage = "url(" + images[Math.round(Math.random())] + ")";
 
 }
