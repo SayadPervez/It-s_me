@@ -10,5 +10,18 @@ if(isMobile==true)
 else
     {dev="pc";document.getElementById('nav-g').innerHTML="Scroll Down";}
 
+    
+
 }
+
+images=['./bg3.jpg','./bg33.jpg'];
+    var i = 0;
+    setInterval(function() {
+          document.getElementById("parent").style.backgroundImage = "url(" + images[i] + ")";
+          i = i + 1;
+          console.log("hi");
+          if (i == images.length) {
+            i =  0;
+          }
+    }, 15000);
 
