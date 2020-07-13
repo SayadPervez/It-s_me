@@ -14,7 +14,7 @@ else
 
 }
 
-images=['./bg3.jpg','./bg33.jpg'];
+images=['./bg3.jpg','./bg31.jpg'];
     var i = 0;
     setInterval(function() {
           document.getElementById("parent").style.backgroundImage = "url(" + images[i] + ")";
