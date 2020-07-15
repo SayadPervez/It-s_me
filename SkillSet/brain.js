@@ -17,4 +17,7 @@ else
 function sp()
 {window.location.replace("https://sayadpervez.github.io/It-s_me/softwareprojects/index.html");}
 
+function ep()
+{window.location.replace("https://sayadpervez.github.io/It-s_me/electronicprojects/index.html");}
+
     
