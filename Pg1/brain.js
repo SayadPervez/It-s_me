@@ -14,5 +14,11 @@ else
     document.getElementById("parent").style.backgroundImage = "url(" + images[Math.round(Math.random())] + ")";
 }
 }
+function insta(){
+    window.location.assign('https://www.instagram.com/spectacular__scientist/');
+}
 
+function gmail(){
+    window.location.assign("https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pervez2504@gmail.com");
+}
 
