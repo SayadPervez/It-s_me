@@ -13,6 +13,7 @@
 
     #icons{
       text-align: right;
+        margin-bottom:20px;
     }
     
     #ig{
@@ -78,7 +79,8 @@ a{
 
 .p{
   
-  padding:8px 16px;
+  padding:26px 26px;
+    margin:15px 15px;
   /*background-color: rgba(255,255,255,0.1);*/
   background-color: rgba(0,0,0,0.75);
 }
