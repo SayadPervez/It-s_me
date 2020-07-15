@@ -19,6 +19,6 @@ function insta(){
 }
 
 function gmail(){
-    window.location.assign("https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pervez2504@gmail.com");
+    window.location.assign("http://www.pervez2504@gmail.com/");
 }
 
