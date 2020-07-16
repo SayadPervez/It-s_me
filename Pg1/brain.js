@@ -17,6 +17,11 @@ else
     images=['./bg3.jpg','./bg31.jpg'];
     document.getElementById("parent").style.backgroundImage = "url(" + images[Math.round(Math.random())] + ")";
 }
+var qwerty=String(navigator.userAgent);
+if(qwerty.includes('nstagram') || qwerty.includes("Instagram") || qwerty.includes("instagram"))
+{
+    alert("Instagram browser not supported !\nPlease open this page in Google Chrome");
+}
 }
 
 function insta(){
