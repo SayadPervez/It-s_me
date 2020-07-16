@@ -17,7 +17,6 @@ else
     images=['./bg3.jpg','./bg31.jpg'];
     document.getElementById("parent").style.backgroundImage = "url(" + images[Math.round(Math.random())] + ")";
 }
-	document.getElementById('test').innerHTML=navigator.userAgent;
 }
 
 function insta(){
