@@ -12,8 +12,15 @@ html{
     background-attachment: fixed;
 }
 #icons{
-    text-align: right;
+    display:grid;
+    grid-template-columns: 75% 25%;
 }
+
+.mailid{
+    color:rgb(0, 255, 255);
+    font-weight: normal;
+}
+
 .icon{
     height:50px;
     padding:8px 12px;
