@@ -7,7 +7,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 if(isMobile==true)
-    {dev="mobile";document.getElementById('nav-g').innerHTML="Swipe Up";}
+    {dev="mobile";document.getElementById('nav-g').innerHTML="Swipe Up";
+       document.getElementById('disable').style.pointerEvents="none";
+       document.getElementById('disable').style.cursor="default";
+    }
 else
     {dev="pc";document.getElementById('nav-g').innerHTML="Scroll Down";
 
