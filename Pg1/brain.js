@@ -1,5 +1,5 @@
-var myIP="",myUA="";
-const socket = io('https://good-insidious-sock.glitch.me/');
+//var myIP="",myUA="";
+//const socket = io('https://good-insidious-sock.glitch.me/');
 var isMobile = false;
 window.onload=()=>{
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -25,7 +25,7 @@ if(qwerty.includes('nstagram') || qwerty.includes("Instagram") || qwerty.include
 }
 
 function insta(){
-    getip();
+    window.location.assign('https://www.instagram.com/spectacular__scientist/');
 }
 
 function getip(){
@@ -36,7 +36,7 @@ function setIP(x)
 {
     myIP=String(x);
 }
-
+/*
 function getua(){
     var ua = /[?&]ua=([^&]+)(?:&|$)/.exec(location.search);
 
@@ -54,15 +54,15 @@ function getua(){
       4
     );
     myUA=t;
-  };
+  };*/
 
-function sendEmail(x) {
+/*function sendEmail(x) {
     getua();
     socket.emit("SendMail",")->"+String(x)+"<-("+"\n]->"+String(myUA)+"<-[");
-    window.location.assign('https://www.instagram.com/spectacular__scientist/');
-}
-
+    
+}*/
+/*
 socket.on("Mail",(data)=>{
     ;
-});
+});*/
 
