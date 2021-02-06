@@ -18,7 +18,7 @@ html,body{
 }
 
 #frontpage{
-    height:90vh;
+    height:80vh;
     width:100%;
     display: flex;
     align-items: center;
@@ -26,12 +26,13 @@ html,body{
 }
 
 #page2{
-    min-height:80vh;
+    min-height:90vh;
     width:100%;
     max-height: max-content;
     background-color: var(--my-pink);
     margin:0;
-    padding:4rem 0rem;
+    padding:10rem 0rem;
+    padding-bottom: 2rem;
 }
 
 h1,h2{
