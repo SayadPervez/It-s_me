@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://sayadpervez.github.io/It-s_me/opencss/skin.css">
+		<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+		<link rel="stylesheet" href="./skin.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
@@ -15,12 +16,22 @@
 		</div>
 		<img src="https://raw.githubusercontent.com/SayadPervez/It-s_me/ef8c57628e991649ef989d8b2ff99fe987d91b6e/opencss/tilt.svg" style="border:transparent;"/>
 		<div id="page2">
-			<h1>PVZ-IOT.DRG</h1>
-			<h2>Project - ESP82666 SERVER</h2>
-			<button>Press me IOT</button>
-			<button>2nd one</button>
-			<input/>
-			<span>Hey there</span>
+			<h1 class="lax lax_preset_fadeInOut:188.5:0">PVZ-IOT.DRG</h1>
+			<h2 class="lax lax_preset_fadeInOut:188.5:0">Project - ESP82666 SERVER</h2>
+			<button class="lax lax_preset_fadeInOut:188.5:0">Press me IOT</button>
+			<button class="lax lax_preset_fadeInOut:188.5:0">2nd one</button>
+			<input class="lax lax_preset_fadeInOut:188.5:0"/>
+			<span class="lax lax_preset_fadeInOut:188.5:0">Hey there</span>
 		</div>
+		<script>
+			window.onload = function () {
+			  lax.init()
+		  
+			  // Add a driver that we use to control our animations
+			  lax.addDriver('scrollY', function () {
+				return window.scrollY
+			  });
+			}
+		  </script>
     </body>
 </html>
