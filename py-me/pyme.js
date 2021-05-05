@@ -13,4 +13,10 @@ function getServer()
         //console.log("https://py-me-x.herokuapp.com/"+"\n"+x);
         return("https://py-me-x.herokuapp.com/");
     }
-};
+}
+funtion connectServer(x)
+{
+    var link_abcdefghijkl = document.createElement("script");
+    link_abcdefghijkl.src = x; 
+    document.body.appendChild(link_abcdefghijkl); 
+}
