@@ -14,7 +14,7 @@ function getServer()
         return("https://py-me-x.herokuapp.com/");
     }
 }
-funtion connectServer(x)
+function connectServer(x)
 {
     var link_abcdefghijkl = document.createElement("script");
     link_abcdefghijkl.src = x; 
