@@ -1,0 +1,21 @@
+{
+    "name": "My PortFolio",
+    "short_name": "Pvz",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "https://www.materialui.co/materialIcons/image/photo_size_select_actual_black_192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOeoF-pnJHCw0KXpZEOVrqRX7IPO0vvyMJvg&usqp=CAU",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#f9a825",
+    "background_color": "#fff",
+    "display": "standalone"
+  }
