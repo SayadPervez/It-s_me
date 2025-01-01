@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+    <head>
+        <title>Sayad Pervez</title>
+        <meta charset="utf-8">
+        <meta name="description" property="og:description" content="Sayad Pervez - Portfolio">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <meta name="theme-color" content="#00BFA5">
+        <link rel="icon" type="image/svg+xml" href="/assets/icons/zteal45.svg">
+        <meta name="generator" content="Astro v2.0.15">
+        <meta property="og:site_name" content="Sayad Pervez">
+        <meta property="og:title" content="Sayad Pervez">
+        <meta name="author" content="Sayad Pervez">
+        <meta property="og:type" content="website">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            :root {
+                --primary-color: #00BFA5;
+                --surface-alpha: #17191C;
+                --grey: #868e96;
+                --bg-grey: #212529;
+            }
+
+            html,body{
+                margin:0;padding:0;
+                color-scheme: dark;
+                background-color: var(--surface-alpha);
+                color: white;
+            }
+
+            button:focus{
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+            @font-face {
+                font-family: 'b5';
+                src: url('/assets/fonts/bootstrap-icons.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .bsicons {
+                font-family: 'b5';
+                font-size: 16px;
+                font-style: normal;
+            }
+
+            #root_center{
+                height: max-content;
+                max-width: 768px !important;
+                padding: 0;
+            }
+
+            #root_center *{
+                max-width: 100% !important;
+            }
+
+            #empty{
+                width: 100%;
+                background: transparent;
+            }
+
+            #hero_section{
+                position: relative;
+            }
+
+            #profile_pic{
+                border-radius: 100%;
+                width: 125px;
+                height: 125px;
+                border:4px solid white;
+                position: absolute;
+                left: 6%;
+                bottom: 0px;
+            }
+
+            #social_media_buttons_container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 12px;
+                padding-right: 6%;
+            }
+
+            #social_media_buttons button{
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+            }
+
+            #github_button{
+                color: white;
+                padding: 0;
+            }
+            
+            #github_button i{
+                font-size: 28px;
+            }
+
+            #github_button:hover{
+                color: var(--primary-color);
+            }
+
+            #meta_container_grid{
+                display: grid;
+                grid-template-columns: 6% 88% 6%;
+            }
+
+            #meta_grid p{
+                opacity: 75%;
+                font-size: 14px;
+            }
+
+            #more_meta div{
+                display: flex;
+                align-items: center;
+                color: var(--grey);
+            }
+
+            #zoho_header .badge,#ug_header .badge{
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            #zoho_logo,#rec_logo,#z45_logo{
+                height:132px;
+                opacity: 0.8;
+            }
+
+            #tabs_div{
+                position: sticky;
+                top: 0;
+                background-color: var(--surface-alpha);
+            }
+
+            .text-primary{
+                color: var(--primary-color) !important;
+            }
+
+            .bg_hover_primary{
+                background-color: transparent;
+                color: var(--primary-color);
+                border: 1px solid var(--primary-color);
+            }
+
+            .bg_primary{
+                background-color: var(--primary-color);
+            }
+
+            .rounded-pill{
+                cursor: pointer !important;
+                border: 2px solid var(--primary-color);
+            }
+
+            .hollow_pill{
+                background: transparent;
+                color: var(--grey);
+                border: 2px solid var(--grey);
+            }
+
+            .hollow_pill:hover{
+                background: transparent;
+                color: var(--primary-color);
+                /* border: 2px solid var(--primary-color); */
+                cursor: pointer;
+            }
+
+            .nav-tabs{
+                border:0 !important;
+                z-index: 10000;
+            }
+
+            .nav-link{
+                color: var(--grey) !important;
+                border: 0 !important;
+                background-color: var(--surface-alpha) !important;
+            }
+
+            .nav-link.active{
+                font-weight: 600;
+                background-color: var(--surface-alpha) !important;
+                color: var(--primary-color) !important;
+                border: 0 !important;
+                border-bottom: 2px solid var(--primary-color) !important;
+            }
+
+            .bg_hover_primary:hover{
+                background-color: var(--primary-color);
+                color: white;
+            }
+
+            .message-pill{
+                background-color: #ffffff33;
+                border:1px solid #00000033;
+                padding:5px 12px;
+                border-radius: 50px;
+                width: max-content;
+            }
+
+            .article{
+                background: transparent;
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 16px;
+            }
+
+            .article_detailed_description
+            {
+                display: none;
+            }
+
+            .article strong{
+                font-weight: 500;
+            }
+
+            .article_header{
+                font-weight: 400;
+            }
+
+            .article .badge{
+                background-color: #495057 !important;
+            }
+
+            .article .article_timestamp{
+                font-size: 12px;
+                color: var(--grey);
+            }
+
+            .article > .article_description{
+                font-size: 14px;
+                margin:12px 8px;
+                text-indent: 4ch;
+            }
+
+            .no_indent{
+                text-indent: 0 !important;
+            }
+
+            .bsicons.link{
+                color: #1E90FF;
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            .bsicons.link:hover{
+                color: #1b80e4;
+                font-weight: 700;
+            }
+
+            .article > .article_description a{
+                color: #1E90FF;
+                cursor: pointer;
+            }
+
+            .article > .article_description a:hover{
+                color: #1b80e4;
+            }
+
+            .article > .article_nav{
+                display: flex;
+                align-items: center;
+            }
+
+            .article > .article_nav > .article_meta_container{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .article > .article_nav > .article_meta_container > .article_meta{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .article > .article_nav > img{
+                width: 40px;
+                height: 40px;
+                border-radius: 99999px;
+                display: inline;
+            }
+
+            .article .carousel-item img{
+                max-height: 600px;
+                border-radius: 4px;
+            }
+
+            .article:hover{
+                background: var(--bg-grey);
+            }
+
+            .pill{
+                border-radius: 10000000px;
+            }
+
+            .no_max_height{
+                max-height: none !important;
+            }
+
+            .empty{
+                height:24px;
+                width: 100%;
+                background: transparent;
+            }
+
+            .hide_on_small_screen{
+                display: block;
+            }
+
+            .hide_on_large_screen{
+                display: none;
+            }
+
+            .flex_on_large_screen{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            @media screen and (max-width: 768px) {
+                *{
+                    font-size: 14px;
+                }
+
+                .hide_on_large_screen {
+                    display: block;
+                }
+
+                .hide_on_small_screen{
+                    display: none;
+                }
+
+                .flex_on_large_screen{
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root_center" class="container-md">
+            <div style="height:48px;" class="empty hide_on_small_screen"></div>
+            <div id="hero_section">
+                <img id="sippin_coffee" src="/assets/images/sippin_coffee.jpg" loading="eager" />
+                <img id="profile_pic" src="/assets/images/avatar.jpg" loading="eager" />
+                <div id="social_media_buttons_container">
+                    <div id="social_media_buttons" class="d-flex">
+                        <button id="github_button" class="btn me-3" onclick="window.location.href='https://github.com/SayadPervez'"><i class="bsicons">&#xF3ED;</i></button>
+                        <button class="btn bg_primary text-white pill" onclick="window.location.href='https://in.linkedin.com/in/pervez-sayad-281844181'">LinkedIn <i class="bsicons ms-1">&#xF472;</i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="meta_container_grid">
+                <div class="empty"></div>
+                <div id="meta_grid" class="mt-1">
+                    <h1>Sayad Pervez</h1>
+                    <p class="text-primary mb-1">Being the best at whatever I do</p>
+                    <span>Full Stack Developer by Profession,<br class="hide_on_large_screen">Electronics and Communication Engineer by Academics</span>
+                    <div id="more_meta" class="mt-2">
+                        <div>
+                            <i class="bsicons me-2">&#xF1CB;</i>
+                            <span>Causally Looking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty"></div>
+            </div>
+            <div class="mt-4 px-2">
+
+                <ul class="nav nav-tabs nav-fill mt-4 px-2" id="tabs_div">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="career-tab" data-bs-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="true">Career</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="profile" aria-selected="false">Education</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="projects-tab" data-bs-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="hobbies-tab" data-bs-toggle="tab" href="#hobbies" role="tab" aria-controls="hobbies" aria-selected="false">Hobbies</a>
+                    </li>
+                </ul>
+
+                <!-- Tab content -->
+                <div class="tab-content mt-4 mx-2">
+                    <div class="tab-pane fade show active" id="career" role="tabpanel" aria-labelledby="career-tab">
+                        <div id="zoho_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Zoho</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">June 2022 - Present</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center my-4">
+                            <img id="zoho_logo" src="https://www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zohologodarkbg.svg" />
+                            <p class="mt-3 text-center">Most of what I do here is confidential &#x1F92B;.<br>But here is what I can say,<br class="hide_on_large_screen"> I'm really good at whatever I do &#x1F609;.</p>
+                        </div>
+                        
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F3DE; Live a Little</span>
+                                    </div>
+                                    <span class="article_timestamp">Nov 2024</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Wrapped up an amazing 4-day team trip with 20+ people! Got the tech crew out of the office and into nature for some much-needed downtime.</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/career/TeamTrip0.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/career/TeamTrip1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F43A; Lone Wolf</span>
+                                    </div>
+                                    <span class="article_timestamp">June 2024</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>
+                                    Just because my recent posts have been about recruitment doesn't mean I've stepped away from coding. In fact, it's quite the opposite - I've been busy showcasing why being a jack-of-all-trades in tech is severely underrated.<br>
+                                    &emsp;&emsp;Context of the Screenshot attached <a onclick="expandDescription($(this).parent())">...(Click to read more)</a>
+                                </p>
+                                <p class="article_detailed_description">Just because my recent posts have been about recruitment doesn't mean I've stepped away from coding. In fact, it's quite the opposite - I've been busy showcasing why being a jack-of-all-trades in tech is severely underrated.<br>
+                                    &emsp;&emsp;Context of the Screenshot attached (Had to censor some keywords for confidentiality) : I recently completed a full-fledged app solo in 6 months, including a crucial import feature. A feature which took an entire team elsewhere a month to implement. From backend to frontend, with some nginx wizardry thrown in, I can handle it all.<br>
+                                    &emsp;&emsp;This isn't about comparing teams or timelines. It's about versatility. In today's tech landscape, the ability to navigate multiple domains isn't just useful - it's essential. While specialists definitely have their place, there's immense value in developers who can adapt, pivot, and deliver across the stack.<br>
+                                    &emsp;&emsp;So yes, I can spot talent and lead recruitment drives. But at my core, I'm a full-stack developer who thrives on challenges across the development spectrum. Need someone who can architect a solution end-to-end and then build it? That's where I shine.</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/career/Achievement.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F50D; Looking for similar minds</span>
+                                    </div>
+                                    <span class="article_timestamp">June 2024</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>
+                                    Recently visited two colleges for Zoho's campus recruitment: Rajalakshmi Engineering College (my alma mater) and SRM Easwari Engineering College. Caught up with my former HOD<a onclick="expandDescription($(this).parent())">...(Click to read more)</a>
+                                </p>
+                                <p class="article_detailed_description">Recently visited two colleges for Zoho's campus recruitment: Rajalakshmi Engineering College (my alma mater) and SRM Easwari Engineering College.
+                                    Caught up with my former HOD, engaging in a valuable discussion about upcoming technologies and the club I previously led. Enjoyed the insightful exchange.
+                                    Engaging with students and faculty at both institutions was insightful.<br>&emsp;&emsp;It's interesting to be on the interviewer's side numerous times so soon after graduation.
+                                    Appreciate Zoho for the chance to leverage my full stack expertise in evaluating candidates during the hiring process</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselRec0Indicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselRec0Indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselRec0Indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/career/recruitment0.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/career/recruitment1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRec0Indicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRec0Indicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F985; On hunt for talent</span>
+                                    </div>
+                                    <span class="article_timestamp">Apr 2024</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>
+                                    Campus Recruiting Drive - Already helping my team scout new talent within a couple of years for the 2nd time. Hopefully the prospects are ready to join my squad. Beautiful campus. Couldn't resist taking a few snapshots.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselRec0Indicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/career/recruitment2.jpg" class="d-block w-100 no_max_height">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F5A5; My Tech Stack in Zoho</span>
+                                    </div>
+                                    <span class="article_timestamp">Since June 2022</span>
+                                </div>
+                            </div>
+                            <div class="article_description no_indent d-flex justify-content-between">
+                                <div>
+                                    <strong>Frontend &#x1F5BC;</strong>
+                                    <ul>
+                                        <li>&#x1F4DD; HTML</li>
+                                        <li>&#x1F3A8; CSS</li>
+                                        <li>&#x2699; JS</li>
+                                        <li>&#x26A1; Bootstrap</li>
+                                        <li>&#x2728; Jquery</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <strong>Backend &#x1F5C4;</strong>
+                                    <ul>
+                                        <li>&#x2615; Java</li>
+                                        <li>&#x1F333; Node JS</li>
+                                        <li>&#x1F40D; Python</li>
+                                        <li>&#x1F4A5; Bash</li>
+                                        <li>&#x1F4F1; C</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <strong>Other Stacks &#x1F4BB;</strong>
+                                    <ul>
+                                        <li>&#x1F7E9; Nginx</li>
+                                        <li>🌙 Lua</li>
+                                        <li>&#x1F6E2; MySQL</li>
+                                        <li>&#x1F427; Linux</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F4C5; My timeline in Zoho</span>
+                                    </div>
+                                    <span class="article_timestamp">Since June 2022</span>
+                                </div>
+                            </div>
+                            <div class="article_description no_indent">
+                                <ul>
+                                    <li>
+                                        <strong>June 2023</strong>
+                                        <ul>
+                                            <li>Got converted to Member Technical Staff</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Aug 2022</strong>
+                                        <ul>
+                                            <li>Got converted to Project Trainee</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>June 2022</strong>
+                                        <ul>
+                                            <li>Got selected as Student Intern</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+
+                        <div id="ug_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Under Graduation</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">9.20 CGPA</span>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center justify-content-center my-4">
+                            <img id="rec_logo" src="/assets/images/education/rec.png" />
+                            <h4 class="mt-3">Bachelor of Engineering</h4>
+                            <h6>Electronics & Communication Engineering</h6>
+                            <p class="mt-2 text-center">College: Where self learning became the most valuable lesson &#x1F609;.</p>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F393; The end of my academic adventure ?</span>
+                                    </div>
+                                    <span class="article_timestamp">Apr 2023</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Completed my undergrad with flying colors, a great job in hand and an amazing C.G.P.A of <strong>9.20</strong><br>
+                                Developed an Acoustic Positioning Protocol that detects the angle of sound as my final year project. Patent pending ... &#x1F44D;</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/education/zoomout2.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F939; The peak of my college life</span>
+                                    </div>
+                                    <span class="article_timestamp">2022</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Was elected the President of Designers Consortium, REC. Club President, intern, projects, college and exams. Embracing chaos and a lifestyle choice. &#x1F635;</p>
+                                <div class="no_indent flex_on_large_screen">
+                                    <div>
+                                        <strong>Events Conducted &#x1F3C6;</strong>
+                                        <ul>
+                                            <li>&#x1F50C; PCB Workshop</li>
+                                            <li>&#x1F4DA; Product Research & Analysis Competition</li>
+                                            <li>&#x1F9EA; Design & Project Expo</li>
+                                            <li>&#x1F4A1; Idea Presentations</li>
+                                        </ul>
+                                    </div>
+    
+                                    <div>
+                                        <strong>More..</strong>
+                                        <ul>
+                                            <li>&#x1F310; Developed website for my Club - <a href="https://desconrec.github.io/desconweb/">DESCON</a></li>
+                                            <li>&#x1F537; Developed Shape Placement Optimization algorithm for CNC Machining</li>
+                                            <li>&#x1F579; Developed <a href="https://rajalakshmi.org/VLabsREC2022/Exp5/simulation.html">PCM Simulation</a> for IITM-PALS-VLABS</li>
+                                            <li>&#x1F466; Joined Zoho as Project Trainee</li>
+                                            <li>&#x1F476; Selected as Student Intern</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="carouselRec1Indicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselRec1Indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselRec1Indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/education/descon0.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/education/descon1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRec1Indicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRec1Indicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F939; The most awaited college years</span>
+                                    </div>
+                                    <span class="article_timestamp">2019-2021</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>I have always been interested in electronics&#x1F50B;, antennas&#x1F4E1;, and computer science&#x1F4BB;. While I was able to self-learn computer science, I chose to pursue a formal education in Electronics and Communication Engineering to deepen my knowledge in these areas.
+                                    <br>&emsp;&emsp;Along with the most awaited college life, came the Covid lockdown&#x1F637;. Apart from restrictive lockdowns and excessive assignments, I managed to</p>
+                                <div class="no_indent">
+                                    <ul>
+                                        <li>&#x1F947; Participated and won a few competitions</li>
+                                        <li>&#x1F6E0; Attended SAEINDIA hands-on Autonomous Vehicle Workshop</li>
+                                        <li>&#x1F4DD; Volunteer as a trainer for Arduino workshop</li>
+                                        <li>&#x1F4DC; Completed a lot of certification courses</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="schooling_header1" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Higher Secondary SSLC</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">87%</span>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x2728; The sparks that kindled my curiosity</span>
+                                    </div>
+                                    <span class="article_timestamp">2019</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Pursued my 11th and 12th Grade in D.A.V. Matriculation Higher Secondary School. Chose Computer Science group which includes Physics, Chemistry, Mathematics and Computer Science. Also demonstrated a fibre optic communication channel using Arduino.</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/education/School.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="schooling_header2" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Matric SSC</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">98%</span>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F3D7; A strong foundation</span>
+                                    </div>
+                                    <span class="article_timestamp">2017</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>The foundation of my academics and personality were laid in St.Sebastians Matriculation Higher Secondary School. Apart from academic excellence, I also pursued various extra curricular activities as follows</p>
+                                <div class="no_indent">
+                                    <ul>
+                                        <li>&#x1F525; Member of boy scouts and participated in camping and march-past</li>
+                                        <li>&#x1F9ED; Selected as the Squad Captain in Scouts</li>
+                                        <li>&#x1F468; Selected as the Leader of Young Student Movement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselSchoolIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselSchoolIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselSchoolIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/education/camping.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/education/award.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSchoolIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSchoolIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+
+                        <!-- <div id="projects_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Filter by</h4>
+                            <div id="project_filter_parent_div">
+                                <span class="badge rounded-pill bg_primary py-2 px-3" onclick="toggle_filter($(this))">Electronics</span>
+                                <span class="badge rounded-pill bg_primary py-2 px-3" onclick="toggle_filter($(this))">Software</span>
+                            </div>
+                        </div> -->
+
+                        <div class="d-flex flex-column align-items-center justify-content-center my-4">
+                            <img id="z45_logo" src="/assets/icons/zteal45.svg" />
+                            <p class="mt-3 text-center">LeetCode is for people who enjoy solving problems that were already solved a thousand times. I’d rather build real projects and create something useful, instead of memorizing algorithms just to flex on the internet.</p>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🔩 Precision Placement</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">EPMA</h4>
+                                <p>
+                                    EPMA or Efficient Positioning for Machining Algorithms is a Shape Placement Optimization algorithm for CNC Machining.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselEpmaIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselEpmaIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselEpmaIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselEpmaIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/EPMA0.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/projects/EPMA1.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/projects/EPMA2.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEpmaIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEpmaIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🌐 Fibre Optic Communication</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Distance to Temperature Sensor</h4>
+                                <p>
+                                    A Fibre Optic Communication channel between 2 Arduino capable of transmitting and receiving 8 bit of data.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselOptoicIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselOptoicIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselOptoicIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/ep3.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/education/School.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOptoicIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOptoicIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">&#x1F393; Final Year Project</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>Developed an Acoustic Positioning Protocol that detects the angle of sound as my final year project. Patent pending ... &#x1F44D;</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselFinProkectIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselFinProkectIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselFinProkectIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselFinProkectIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/FinalYear0.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/projects/FinalYear1.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/projects/FinalYear2.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinProkectIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFinProkectIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">👩‍🏫 Teaching the way I learnt</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">PCM Simulation <i class="bsicons link" onclick="openInNewTab('https://rajalakshmi.org/VLabsREC2022/Exp5/simulation.html')">&#xF1C5;</i></h4>
+                                <p>
+                                    A educational simulation of Pulse Code Modulation developed for IITM-PALS-VLABS
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/PCM.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🧙‍♂️ Club</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Designers' Consoritum Website <i class="bsicons link" onclick="openInNewTab('https://desconrec.github.io/desconweb/')">&#xF1C5;</i></h4>
+                                <p>
+                                    A website for Designers' Consoritum Club which I lead as the President.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/DESCON.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🤖 My Jarvis</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">CLINT <i class="bsicons link" onclick="openInNewTab('https://github.com/SayadPervez/CLINT')">&#xF1C5;</i></h4>
+                                <p>
+                                    CLINT or Command Line Interface NLP Tool is a Natural Language Processing AI interface built to automate tasks using human language as input. The theory is that "Once an Machine Learning NLP algorithm is taught basic commands, it's intelligence would evolve iteratively". My model was trained enough to perform mathematical operations, find and open files in my PC using natural language.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/ai2.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">📈 I want it ? I make it !</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Arduino Master Delta <i class="bsicons link" onclick="openInNewTab('https://pypi.org/project/AMD/')">&#xF1C5;</i></h4>
+                                <p>
+                                    I created "Arduino Master Delta," a Python library designed to communicate with Arduino Microcontrollers and visualize data. This project allowed me to deepen my understanding of data visualization, Git, and the inner workings of Python libraries. I developed it as an alternative to Processing, which uses C, since I preferred a Python-based solution for the task.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/IntroPic.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">📧 Won't be fooled twice</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Secure Mail Server <i class="bsicons link" onclick="openInNewTab('https://github.com/SayadPervez/secure-mail-server')">&#xF1C5;</i></h4>
+                                <p>
+                                    I developed a public API service designed to send emails from static webpages that lack a secure method for email transmission. I built this web service after experiencing spam from one of these unreliable service providers.
+                                </p>
+                                <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/mailer.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🐍 The easy way</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Py-me <i class="bsicons link" onclick="openInNewTab('https://github.com/SayadPervez/py-me')">&#xF1C5;</i></h4>
+                                <p>
+                                    Py-me is a Socket.io API used to execute a Python snippet and get back the output for easier software development. It is secure, free and can be accessed from any language that has Socket.io Framework. Py-me was built specially for static webpages hosted on free web hosting services like GitHub, Glitch and Heroku where you might have to pay for a Backend services. A static website has various limitations which can be overcome using py-me.
+                                </p>
+                                <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/pyme.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🗄️ Needed Backups</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Personal Cloud DB</h4>
+                                <p>
+                                    My personal database manager that allows me to upload/download any file to a cloud server. I built it as an alternative to Google Drive to store and retrieve my files in a more secure manner
+                                </p>
+                                <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/dbman.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🪜 Rising through the Racks</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">IOT Rackbot</h4>
+                                <p>
+                                    An IOT robot that can automate pick ,place and search objects placed on a rack or shelf.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/wp4902398.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">♟️ Life's a game.</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Mole Hunter <i class="bsicons link" onclick="openInNewTab('https://molehunt.glitch.me/')">&#xF1C5;</i></h4>
+                                <p>
+                                    A simple Progressive Web Application based game that replicates the classic arcade game - Mole Hunter.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/mole-hunter.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">₿ Almost Bitcoin</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">College Crypto Currency</h4>
+                                <p>
+                                    A distributed server interface for blockchain based Crypto Currency for my College. This project helped me learn a lot regarding distributed network architecture and horizontal scaling.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/recoin.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🦠 Covid</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Corona Bed Availability API</h4>
+                                <p>
+                                    An API developed to find the availability of hospital beds in a district built on FASTAPI in Python.
+                                </p>
+                                <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/tncorona.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🦠 Covid</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Software</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Corona Population Mapper</h4>
+                                <p>
+                                    A website to monitor the number of covid cases in a given area in TamilNadu
+                                    <div class="message-pill no_indent">⚠️ This website was decommissioned after the discontinuation of free Heroku accounts.</div>
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/wp1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🔋 Microchip Multimeter</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">IC based Digital Multimeter</h4>
+                                <p>
+                                    A simple and cheap digital multimeter built using attiny-85, IC4026, IC7805 and a 7 segment display.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/ep1.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🌡️ Measuring Temperature with Distance</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">Distance to Temperature Sensor</h4>
+                                <p>
+                                    A Temperature Sensor built using a UltraSonic Distance sensor built upon python library AMD.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/ep2.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🔐 IR Vault</span>
+                                    </div>
+                                    <span class="badge rounded-pill bg_primary py-2 px-3" style="background-color: #00BFA5 !important;">Hybrid</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <h4 class="no_indent article_header">IR Password Safe</h4>
+                                <p>
+                                    A remote unlock safe system built using IR sensors, Arduino and Servos.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/projects/ep5.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
+                        <div id="hobby1_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Star Gazing & <br class="hide_on_large_screen">Astrophotography</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">🔭</span>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🌌 Into the vastness of Space</span>
+                                    </div>
+                                    <span class="article_timestamp">Shot on S23 Ultra</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>I love escaping the city life to the darkest nights where am accompanied by the vastness of the universe. Here are a few snaps I took to preserve those moments.</p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselSpaceIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/hobbies/moonset.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/hobbies/stars.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/hobbies/starsnme.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/hobbies/starsnew.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/hobbies/observatory.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/hobbies/morestars.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSpaceIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="hobby2_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Hiking/Trekking</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">🏞️</span>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">🏕️ Remote places &<br class="hide_on_large_screen"> unforgettable tales</span>
+                                    </div>
+                                    <span class="article_timestamp">Shot on S23 Ultra</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>
+                                    A remote cabin in the woods, an Introverts dream. I enjoy leaving the civilization behind into the least explored forests and wake up amidst the dark & cold mornings.
+                                    <br>&emsp;&emsp;<strong>An Unforgettable Tale:</strong> The picture in the 2nd slide was shot at 4 AM <a onclick="expandDescription($(this).parent())">...(Click to read more)</a>
+                                </p>
+                                <p class="article_detailed_description">A remote cabin in the woods, an Introverts dream. I enjoy leaving the civilization behind into the least explored forests and wake up amidst the dark & cold mornings.
+                                    <br>&emsp;&emsp;<strong>An Unforgettable Tale:</strong> The picture in the 2nd slide was shot at 4 AM by the entrance of my camp beyond which I was asked not to stroll alone. I set up my tripod, took a few long exposure shots by the edge of the camp wishing to spot stars on that cloudy night. On a quick glance, It was a bad night for stargazing and I went back to my cabin disappointed. Upon checking the shots, this one pic blew my mind. In the woods, there were a pair of glowing eyes, gazing right at me for atleast 2 minutes (Time taken for a minimal long exposure shot) without flinching that sent chills down my spine. This forest was known to house leopards and tigers. Fun fact, there is also a cemetary straight down that trail.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselForestIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselForestIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselForestIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/hobbies/firest.jpg" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/hobbies/eyes.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselForestIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselForestIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="hobby3_header" class="d-flex align-items-center justify-content-between">
+                            <h4 class="mt-2">Motorcycling</h4>
+                            <span class="badge rounded-pill bg_primary py-2 px-3">🏍️</span>
+                        </div>
+
+                        <div class="article">
+                            <div class="article_nav">
+                                <img src="/assets/images/avatar.jpg" />
+                                <div class="article_meta_container">
+                                    <div class="article_meta">
+                                        <strong>Sayad Pervez</strong>
+                                        <span class="badge rounded-pill">⚙️ 6 gears &<br class="hide_on_large_screen"> on the 7th cloud</span>
+                                    </div>
+                                    <span class="article_timestamp">Shot on S23 Ultra</span>
+                                </div>
+                            </div>
+                            <div class="article_description">
+                                <p>
+                                    Riding my motorbike, leaving all worries on the road. Sometimes over the rivers and sometimes through the deserts.
+                                </p>
+                            </div>
+                            <div class="article_carousel">
+                                <div id="carouselBikeIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/hobbies/bike.jpg" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script>
+            function expandDescription(self)
+            {
+                self.css("display","none");
+                self.next().css("display","block");
+            }
+
+            function toggle_filter(self=null)
+            {
+                // toggle self ui
+                if(self)
+                {
+                    self.toggleClass("hollow_pill");
+                }
+
+                let show_electronic_projects = null,show_software_projects = null;
+
+                // fetch status of all project filters
+                $("#project_filter_parent_div").children().each((index,elem)=>{
+                    elem = $(elem);
+                    switch(elem.text())
+                    {
+                        case "Electronics"  : show_electronic_projects = elem.hasClass("hollow_pill") ? false : true;   break;
+                        case "Software"     : show_software_projects = elem.hasClass("hollow_pill") ? false : true;     break;
+                    }
+                })
+
+                // TODO: show projects based on filters
+                // also handle the case where both are false
+                console.log(show_electronic_projects,show_software_projects)
+            }
+            function openInNewTab(url) {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }
+        </script>
+    </body>
+</html>
